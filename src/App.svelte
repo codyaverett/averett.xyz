@@ -3,7 +3,7 @@
   export let date;
 
   onMount(async () => {
-    const res = await fetch("/.netlify/api/date");
+    const res = await fetch("/.netlify/functions/date");
     const newDate = await res.text();
     date = newDate;
   });
