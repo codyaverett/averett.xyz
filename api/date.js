@@ -1,3 +1,3 @@
 exports.handler = function(event, context, callback) {
-  return new Date().toString();
+  return new Promise.resolve(new Date().toString());
 }
