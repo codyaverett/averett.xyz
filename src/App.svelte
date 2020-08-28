@@ -5,7 +5,7 @@
   onMount(async () => {
     const res = await fetch("/.netlify/api/date");
     const newDate = await res.text();
-    date = new Date();
+    date = newDate;
   });
 </script>
 
