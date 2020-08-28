@@ -1,3 +1,3 @@
 exports.handler = function(event, context, callback) {
-  return event;
+  return new Date().toString();
 }
