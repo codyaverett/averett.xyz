@@ -5,7 +5,7 @@
   onMount(async () => {
     const res = await fetch("/api/date");
     const newDate = await res.text();
-    date = newDate;
+    date = new Date();
   });
 </script>
 
