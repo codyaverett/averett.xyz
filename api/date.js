@@ -1,3 +1,6 @@
 exports.handler = function(event, context, callback) {
-  return new Date();
+  return new {
+    statusCode: 200,
+    body: `${new Date()}`
+  }
 }
