@@ -1,5 +1,5 @@
 exports.handler = function(event, context, callback) {
-  return new {
+  return {
     statusCode: 200,
     body: `${new Date()}`
   }
